@@ -51,8 +51,9 @@ function getCicleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  return ((value1) / 2) + ((value2) / 2);
+  // throw new Error('Not implemented');
 }
 
 /**
@@ -148,10 +149,11 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
+function parseNumberFromString(value) {
+  return +value;
   // const numFromString = parseInt(value, 10);
   // return numFromString;
-  throw new Error('Not implemented');
+  // throw new Error('Not implemented');
 }
 
 /**
@@ -242,8 +244,9 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
+function toNumber(value, def) {
+  return (parseInt(value, 10)) ? parseInt(value, 10) : def;
+  // throw new Error('Not implemented');
 }
 
 module.exports = {
